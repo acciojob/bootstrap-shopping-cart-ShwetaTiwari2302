@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        .block-heading {
+            text-align: center;
+            color: #3b99e0;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100px;
+        }
+        .summary {
+            background-color: #f7fbff;
+            padding: 20px;
+            border-top: 1px solid #5ea4f3;
+        }
+        .summary h5 {
+            margin-top: 10px;
+        }
+        .summary p {
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .summary button {
+            background-color: #3b99e0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .summary button:hover {
+            background-color: #5ea4f3;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container mt-5">
+    <!-- Block Heading -->
+    <h2 class="block-heading">Shopping Cart</h2>
+    
+    <div class="row">
+        <!-- Product List Column (8 columns) -->
+        <div class="col-lg-8">
+            <!-- Product Block 1 -->
+            <div class="product row">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product Image 1">
+                </div>
+                <div class="col-8">
+                    <h5>Product Name 1</h5>
+                    <p>Description of the product goes here.</p>
+                    <h6>$49.99</h6>
+                </div>
+            </div>
+
+            <!-- Product Block 2 -->
+            <div class="product row">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product Image 2">
+                </div>
+                <div class="col-8">
+                    <h5>Product Name 2</h5>
+                    <p>Description of the product goes here.</p>
+                    <h6>$29.99</h6>
+                </div>
+            </div>
+
+            <!-- Product Block 3 -->
+            <div class="product row">
+                <div class="col-4">
+                    <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product Image 3">
+                </div>
+                <div class="col-8">
+                    <h5>Product Name 3</h5>
+                    <p>Description of the product goes here.</p>
+                    <h6>$19.99</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Block Column (4 columns) -->
+        <div class="col-lg-4">
+            <div class="summary">
+                <h5>Summary</h5>
+                <p>Subtotal <span class="float-right">$99.97</span></p>
+                <p>Shipping <span class="float-right">$5.00</span></p>
+                <p>Tax <span class="float-right">$8.00</span></p>
+                <h5>Total <span class="float-right">$112.97</span></h5>
+                <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
